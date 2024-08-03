@@ -1,0 +1,39 @@
+@import "../../styles/style.scss";
+.navbar{
+  .center{
+    ul{
+      li{
+        font-weight: 600;
+        color: $main_green;
+      }
+      li:hover{
+        color: $main_green;
+        text-shadow: 3px 6px 7px rgba(0, 0, 0, 0.22);
+        transition: 0.9s ease;
+      }
+    }
+  }
+  .right{
+    .searching{
+      input{
+        border: 1px solid $main_green;
+        border-radius: 30px;
+        height: 40px;
+        padding: 0 15px;
+        width: 230px;
+      }
+    }
+    .icons{
+      height: 30px;
+      background-color:$gold ;
+      border-radius: 50%;
+      height: 40px;
+      padding: 8px;
+    }
+    .count-badge{
+      top: -8px;
+      right: -10px;
+      background-color: $main_green;
+    }
+  }
+}
