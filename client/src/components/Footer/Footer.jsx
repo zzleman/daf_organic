@@ -3,10 +3,10 @@ import "../../styles/style.scss"
 import "./Footer.scss"
 const Footer = () => {
   return (
-    <div className='footer flex text-white  gap-28'>
+    <div className='footer flex text-white gap-5  lg:gap-28 flex-col lg:flex-row'>
       <div className="left flex flex-col gap-5">
         <img className='h-40 w-40 object-cover rounded-xl' src="img/logo_footer.jpeg" alt="" />
-        <p className='w-60'>Elementum nisi quis eleifend quam adipiscing. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin</p>
+        <p className='lg:w-60'>Elementum nisi quis eleifend quam adipiscing. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin</p>
         <div className="social flex gap-4">
           <img className='h-9 w-9' src="img/instagram.png" alt="" />
           <img className='h-9 w-9' src="img/whatsapp.png" alt="" />
@@ -38,23 +38,24 @@ const Footer = () => {
       </div>
       <div className="center-right flex flex-col gap-7">
         <h3 className='text-2xl font-semibold '>Support</h3>
-        <ul className='flex flex-col gap-5'>
+        <ul className='grid grid-cols-2 lg:grid-cols-1 gap-5'>
           <li><a href="" className='flex'> <img src="icons/sort_right.png" className='h-6'/>  About</a></li>
           <li><a href="" className='flex'> <img src="icons/sort_right.png" className='h-6'/> Products</a></li>
           <li><a href="" className='flex'> <img src="icons/sort_right.png" className='h-6'/> Gallery</a></li>
           <li><a href="" className='flex'> <img src="icons/sort_right.png" className='h-6'/> FAQ</a></li>
           <li><a href="" className='flex'> <img src="icons/sort_right.png" className='h-6'/> Contact</a></li>
+          <li><a href="" className='flex'> <img src="icons/sort_right.png" className='h-6'/> Shop</a></li>
         </ul>
       </div>
       <div className="right flex flex-col gap-7">
         <h3 className='text-2xl font-semibold'>Instagram</h3>
-        <div className='intsa-area flex flex-wrap gap-6'>
-          <img className='h-28 w-24 rounded-2xl' src="img/insta_1.jpg" alt="" />
-          <img className='h-28 w-24 rounded-2xl' src="img/insta_2.jpg" alt="" />
-          <img className='h-28 w-24 rounded-2xl' src="img/insta_3.jpg" alt="" />
-          <img className='h-28 w-24 rounded-2xl' src="img/insta_4.jpg" alt="" />
-          <img className='h-28 w-24 rounded-2xl' src="img/insta_5.jpg" alt="" />
-          <img className='h-28 w-24 rounded-2xl' src="img/insta_6.jpg" alt="" />
+        <div className='intsa-area grid grid-cols-2 lg:grid-cols-3 gap-6'>
+          <img className='h-32 w-96 lg:h-28 lg:w-24 object-cover rounded-2xl' src="img/insta_1.jpg" alt="" />
+          <img className='h-32 w-96 lg:h-28 lg:w-24 object-cover rounded-2xl' src="img/insta_2.jpg" alt="" />
+          <img className='h-32 w-96 lg:h-28 lg:w-24 object-cover rounded-2xl' src="img/insta_3.jpg" alt="" />
+          <img className='h-32 w-96 lg:h-28 lg:w-24 object-cover rounded-2xl' src="img/insta_4.jpg" alt="" />
+          <img className='h-32 w-96 lg:h-28 lg:w-24 object-cover rounded-2xl' src="img/insta_5.jpg" alt="" />
+          <img className='h-32 w-96 lg:h-28 lg:w-24 object-cover rounded-2xl' src="img/insta_6.jpg" alt="" />
         </div>
       </div>
     </div>

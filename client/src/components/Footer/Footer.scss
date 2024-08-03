@@ -1,28 +1,36 @@
 @import "../../styles/style.scss";
-.footer{
-  height: 600px;
-  background-color: $main_green;
-  padding: 120px 50px;
-  .left{
+.footer {
+    height: 600px;
+    background-color: $main_green;
+    padding: 120px 50px;
+    .left {}
+    .center-left {
+        .contacts-icon {
+            background-color: $gold;
+            border-radius: 50%;
+            padding: 10px;
+            height: 40px;
+        }
+    }
+    .center-right {
+        ul {
+            li:hover {
+                color: $gold;
+                transition: 0.5s ease;
+            }
+        }
+    }
+    .right {
+        width: 360px;
+    }
+}
 
-  }
-  .center-left{
-    .contacts-icon{
-      background-color: $gold;
-      border-radius: 50%;
-      padding: 10px;
-      height: 40px;
+@media screen and (max-width:767px) {
+    .footer {
+        height: max-content;
+        padding: 50px 15px;
+        .right {
+            width: 100%;
+        }
     }
-  }
-  .center-right{
-    ul{
-      li:hover{
-        color: $gold;
-        transition: 0.5s ease;
-      }
-    }
-  }
-  .right{
-    width: 400px;
-  }
 }
