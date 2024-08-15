@@ -1,0 +1,44 @@
+@import "../../styles/style.scss";
+
+.product {
+  margin: 100px 0;
+  .left {
+    img {
+      border-radius: 20px;
+      width: 650px;
+      height: 560px;
+      object-fit: cover;
+    }
+  }
+  .right {
+    h1 {
+      font-size: $md_font;
+      color: $main_green;
+      font-weight: 600;
+    }
+    p {
+      width: 650px;
+    }
+    #price {
+      font-size: $md_font;
+      color: $main_green;
+      font-weight: 600;
+    }
+    .quantity {
+      display: flex;
+      gap: 8px;
+      button {
+        background-color: lightgrey;
+        width: 35px;
+        height: 25px;
+      }
+    }
+    .add {
+      background-color: $secondary_green;
+      color: white;
+      width: 200px;
+      height: 40px;
+      border-radius: 12px;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../styles/style.scss";
+.questionContainer {
+    height: 550px;
+    .top {
+        h1 {
+            color: $main_green;
+            font-size: $md_font;
+            font-weight: 700;
+        }
+        p {
+            width: 600px;
+            margin: 20px auto;
+        }
+    }
+    .bottom {
+        .card-item {
+            border-radius: 20px;
+            width: 500px;
+            height: 250px;
+            box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+            h4 {
+                font-size: $sm_font;
+                font-weight: 600;
+                color: $main_green;
+            }
+        }
+        .card-green {
+            background-color: $main_green;
+            color: white;
+            h4 {
+                color: white;
+            }
+        }
+    }
+}

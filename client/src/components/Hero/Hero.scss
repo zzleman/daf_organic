@@ -1,0 +1,40 @@
+@import "../../styles/style.scss";
+.hero-section {
+    background-color: $pale;
+    height: 850px;
+    .hero-left {
+        h1 {
+            font-size: $lg_font;
+            font-family: "Nunito Sans", sans-serif;
+            font-weight: 900;
+            color: $main_green;
+            width: 670px;
+        }
+        p {
+            font-family: "Montserrat", sans-serif;
+            width: 660px;
+        }
+        button {
+            background-color: $gold;
+            color: $main_green;
+            width: 132px;
+            height: 48px;
+            border-radius: 25px;
+            font-weight: 500;
+        }
+        .hero-offers {
+            p {
+                font-family: "Nunito Sans", sans-serif;
+                font-weight: 700;
+                width: 150px;
+            }
+        }
+    }
+    .hero-right {
+        width: 55%;
+        bottom: -45px;
+        img {
+            width: 100%;
+        }
+    }
+}

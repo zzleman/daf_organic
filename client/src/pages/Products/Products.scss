@@ -1,0 +1,111 @@
+@import "../../styles/style.scss";
+
+.products {
+  .right {
+    position: sticky;
+    height: 100%;
+    top: 0px;
+    h2 {
+      font-size: $sm_font;
+      color: $main_green;
+      font-weight: 600;
+    }
+
+    .filterItem {
+      .radio-group {
+        .radio-input {
+          display: none;
+        }
+        .radio-label {
+          position: relative;
+          padding-left: 30px;
+          cursor: pointer;
+          display: inline-block;
+          line-height: 20px;
+        }
+
+        .radio-label::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 20px;
+          height: 20px;
+          background: white;
+          border-radius: 50%;
+          transform: translateY(-50%);
+          transition: background 0.3s;
+          border: 1px solid $gold;
+        }
+
+        .radio-input:checked + .radio-label::before {
+          background: $main_green;
+          box-shadow: inset 0 0 0 4px #fff;
+        }
+      }
+
+      .inputItem {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+
+        input[type="checkbox"] {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 20px;
+          height: 20px;
+          border: 2px solid #ccc;
+          border-radius: 4px;
+
+          cursor: pointer;
+          position: relative;
+          margin-right: 10px;
+
+          &:checked {
+            background: white;
+            border-color: $gold;
+          }
+
+          &:checked::after {
+            content: "";
+            position: absolute;
+            left: 4px;
+            top: 4px;
+            width: 8px;
+            height: 8px;
+            background: $main_green;
+            border-radius: 2px;
+          }
+        }
+
+        input[type="range"] {
+          -webkit-appearance: none;
+          width: 60%;
+          height: 12px;
+          background: white;
+          border-radius: 5px;
+          cursor: pointer;
+          outline: none;
+          position: relative;
+
+          &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 14px;
+            height: 14px;
+            background: $main_green;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+
+          &::-webkit-slider-runnable-track {
+            height: 14px;
+            background: white;
+            border: 1px solid $gold;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+}

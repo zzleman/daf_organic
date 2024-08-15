@@ -1,0 +1,14 @@
+@import "../../styles/style.scss";
+
+.breadcrumb {
+  background: url("https://html.merku.love/herbalist/img/header.jpg");
+  height: 280px;
+  background-size: cover;
+  margin-bottom: 100px;
+  h1 {
+    color: $main_green;
+    text-align: center;
+    font-size: $lg_font;
+    font-weight: 600;
+  }
+}
